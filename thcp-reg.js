@@ -110,7 +110,7 @@ var _email="";
                     refreshToken:''
                 }
                 
-                fetch('https://bbaut.herokuapp.com/signup', {
+                fetch('https://thcp-api.herokuapp.com/signup', {
                     method: 'POST', // or 'PUT'
                     headers: {
                     'Content-Type': 'application/json',
@@ -123,7 +123,7 @@ var _email="";
                     console.log('\nREGISTER Token:', data);
                     
 
-                fetch('https://bbaut.herokuapp.com/signin', {
+                fetch('https://thcp-api.herokuapp.com/signin', {
                     method: 'POST', // or 'PUT'
                     headers: {
                     'Content-Type': 'application/json',
@@ -214,7 +214,7 @@ var _email="";
   }
 };
 
-fetch('https://bbaut.herokuapp.com/me', options)
+fetch('https://thcp-api.herokuapp.com/me', options)
   .then(response => response.json())
   .then(response => {
   	_logToken = response;
@@ -276,7 +276,7 @@ fetch('https://bbaut.herokuapp.com/me', options)
       }
     };
     
-    fetch('https://bbaut.herokuapp.com/user/'+c_email, options)
+    fetch('https://thcp-api.herokuapp.com/user/'+c_email, options)
       .then(response => response.json())
       .then(response => {
         
